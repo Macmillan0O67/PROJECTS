@@ -1,0 +1,43 @@
+Return-Path: <security@micr0soft-support.com>
+Received: from mail.micr0soft-support.com (185.220.101.45)
+    by mx.companydomain.com with ESMTP id A1B2C3D4
+    for <employee@companydomain.com>;
+    Tue, 10 Feb 2026 09:42:15 +0000
+Received-SPF: Fail (companydomain.com: domain of micr0soft-support.com does not designate 185.220.101.45 as permitted sender)
+Authentication-Results: 
+    spf=fail smtp.mailfrom=micr0soft-support.com;
+    dkim=fail header.d=micr0soft-support.com;
+    dmarc=fail action=quarantine
+From: "Microsoft Security Team" <security@micr0soft-support.com>
+To: employee@companydomain.com
+Subject: Urgent: Suspicious Login Attempt Detected
+Date: Tue, 10 Feb 2026 09:41:58 +0000
+Message-ID: <20260210094158.12345@mail.micr0soft-support.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+
+<html>
+  <body>
+    <p>Dear User,</p>
+
+    <p>We detected a suspicious login attempt on your Microsoft account from an unrecognized device located in Eastern Europe.</p>
+
+    <p>If this was not you, please secure your account immediately to avoid temporary suspension.</p>
+
+    <p>
+      <a href="http://secure-microsoft-login.com/verify-account">
+        Verify Your Account Now
+      </a>
+    </p>
+
+    <p>Failure to verify within 24 hours will result in permanent account restriction.</p>
+
+    <p>Thank you,<br>
+    Microsoft Security Team</p>
+
+    <hr>
+    <small>
+    This is an automated security notification. Please do not reply.
+    </small>
+  </body>
+</html>
