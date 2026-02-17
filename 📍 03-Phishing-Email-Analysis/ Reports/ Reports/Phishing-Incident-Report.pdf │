@@ -1,0 +1,30 @@
+Executive Summary
+
+A phishing email impersonating a financial institution attempted credential harvesting.
+
+Indicators of Compromise
+Suspicious sender domain
+URL redirect chain
+IP reputation flagged
+
+Timeline
+
+| Time     | Action         |
+| -------- | -------------- |
+| 11:05 AM | Email received |
+| 11:08 AM | User reported  |
+| 11:12 AM | SOC triage     |
+| 11:25 AM | Domain blocked |
+
+
+Containment
+
+Blocked malicious domain
+Updated email gateway rules
+User awareness notification
+
+Recommendations
+
+Enable DMARC enforcement
+Implement email sandboxing
+Conduct phishing simulation training
