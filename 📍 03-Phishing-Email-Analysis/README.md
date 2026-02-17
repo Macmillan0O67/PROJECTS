@@ -89,7 +89,7 @@ Framework Reference: MITRE ATT&CK Enterprise Matrix
 
 The phishing email sample used in this investigation can be found here:
 
-📎 [sample_phishing_email.eml](evidence/sample_phishing_email.eml)
+📎 [sample_phishing_email.eml](📍 03-Phishing-Email-Analysis/ Reports/ Reports/sample_phishing_email.eml)
 
 ⚠️ This sample is created strictly for cybersecurity training purposes.
 
