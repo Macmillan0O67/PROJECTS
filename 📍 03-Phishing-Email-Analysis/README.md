@@ -4,7 +4,7 @@
 ![Project Type](https://img.shields.io/badge/Project-Cybersecurity-red)
 ![MITRE ATT&CK](https://img.shields.io/badge/Framework-MITRE%20ATT%26CK-orange)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
 
 ---
 
