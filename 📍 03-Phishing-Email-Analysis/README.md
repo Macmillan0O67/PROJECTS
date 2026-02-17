@@ -80,7 +80,7 @@ Framework Reference: MITRE ATT&CK Enterprise Matrix
 
 - Malicious Sender IP: `185.220.101.45`
 - Spoofed Domain: `micr0soft-support.com`
-- Malicious URL: `[(http://secure-microsoft-login.com/verify-account)]`
+- Malicious URL: `(http://secure-microsoft-login.com/verify-account)`
 - Authentication Failure: SPF & DKIM Failed
 
 
