@@ -79,25 +79,27 @@ The threat was successfully contained through domain blocking and email security
 ---
 
 # 6. Scripts
-   python
+  
+  - python
 
-`import requests
-# Extract URLs from email body
-# Submit to VirusTotal API
-response = requests.get(
-    f"https://www.virustotal.com/api/v3/urls/{url_id}",
-    headers={"x-apikey": API_KEY}
-)
-# Parse results and flag malicious URLs`
+-import requests
+-Extract URLs from email body
+-Submit to VirusTotal API
+-response = requests.get(
+    -f"https://www.virustotal.com/api/v3/urls/{url_id}",
+    -headers={"x-apikey": API_KEY}
+-)
+ -Parse results and flag malicious URLs`
 
-*Bash example — I wrote a script for log monitoring:*
+-*Bash example — I wrote a script for log monitoring:*
 
-bash
+-bash
 
-`# Monitor auth.log for failed SSH logins
-tail -f /var/log/auth.log | grep "Failed password" | \
-awk '{print $11}' | sort | uniq -c | sort -rn | \
-awk '$1 > 5 {print "ALERT: Brute force from " $2}'`
+- Monitor auth.log for failed SSH logins
+-tail -f /var/log/auth.log | grep "Failed password" | \
+-awk '{print $11}' | sort | uniq -c | sort -rn | \
+-awk '$1 > 5 {print "ALERT: Brute force from " $2}'`
+
 # 7. Containment Actions
 
 - Blocked malicious domain at email gateway
