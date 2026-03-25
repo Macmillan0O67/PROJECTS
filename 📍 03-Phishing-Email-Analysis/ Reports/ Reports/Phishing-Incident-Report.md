@@ -78,7 +78,27 @@ The threat was successfully contained through domain blocking and email security
 
 ---
 
-# 6. Containment Actions
+# 6. Scripts
+   python
+
+`import requests
+# Extract URLs from email body
+# Submit to VirusTotal API
+response = requests.get(
+    f"https://www.virustotal.com/api/v3/urls/{url_id}",
+    headers={"x-apikey": API_KEY}
+)
+# Parse results and flag malicious URLs`
+
+*Bash example — I wrote a script for log monitoring:*
+
+bash
+
+`# Monitor auth.log for failed SSH logins
+tail -f /var/log/auth.log | grep "Failed password" | \
+awk '{print $11}' | sort | uniq -c | sort -rn | \
+awk '$1 > 5 {print "ALERT: Brute force from " $2}'`
+# 7. Containment Actions
 
 - Blocked malicious domain at email gateway
 - Added URL to proxy blacklist
@@ -88,7 +108,7 @@ The threat was successfully contained through domain blocking and email security
 
 ---
 
-# 7. MITRE ATT&CK Mapping
+# 8. MITRE ATT&CK Mapping
 
 | Technique | Technique ID |
 |-----------|--------------|
@@ -98,7 +118,7 @@ The threat was successfully contained through domain blocking and email security
 
 ---
 
-# 8. Risk Assessment
+# 9. Risk Assessment
 
 | Category | Risk Level |
 |----------|------------|
@@ -109,7 +129,7 @@ The threat was successfully contained through domain blocking and email security
 
 ---
 
-# 9. Recommendations
+# 10. Recommendations
 
 - Enable strict DMARC enforcement policy (Reject)
 - Implement advanced email sandboxing
@@ -120,7 +140,7 @@ The threat was successfully contained through domain blocking and email security
 
 ---
 
-# 10. Lessons Learned
+# 11. Lessons Learned
 
 - User awareness played a critical role in early detection
 - Email authentication enforcement requires improvement
@@ -128,7 +148,7 @@ The threat was successfully contained through domain blocking and email security
 
 ---
 
-# 11. Conclusion
+# 12. Conclusion
 
 The phishing attempt was successfully detected and contained without confirmed compromise. Early user reporting and SOC response minimized potential damage.
 
@@ -136,6 +156,6 @@ Improving email authentication controls and enhancing phishing defense mechanism
 
 ---
 
-# 12. Disclaimer
+# 13. Disclaimer
 
 This investigation was conducted in a simulated lab environment for cybersecurity training and portfolio demonstration purposes.
